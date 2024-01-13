@@ -7,6 +7,7 @@
     /* margin: 0;
     padding: 0; */
 }
+
 /* ==========shared style=============*/
 
 .btn-primary {
@@ -16,8 +17,8 @@
     color: #FFF;
     border: 0;
     font-size: 1.3rem;
-    display: block;
-    margin: 32px auto 50px;
+    /* display: block; */
+    /* margin: 32px 50px; */
 }
 
 
@@ -63,13 +64,14 @@ nav li a {
 
 /* ======== BANNER STYLE ========== */
 
-.banner-content{
+.banner-content {
     max-width: 800px;
     text-align: center;
-    margin: 0px auto;
+    margin: 50px auto;
 }
+
 .banner-heading {
-    color: #131313;    
+    color: #131313;
     font-size: 4rem;
     font-weight: 700;
 }
@@ -77,46 +79,118 @@ nav li a {
 .banner-description {
     margin: 20px;
     color: #727272;
+    padding-bottom: 32px;
+    line-height: 1.5rem;
 }
 
-.banner-img{
+.banner-img {
     text-align: center;
     margin: 0px auto;
     display: flex;
-    justify-content:center ;
+    justify-content: center;
     width: 80%;
     padding-bottom: 45px;
 
 }
 
+/* main style */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+/* ============Feature one-========== */
+
+.feature-one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 85px;
+    
+}
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.teams-content {
+    padding-left: 70px;
+    align-items: left;
+
+}
+
+.teams-title {
+    max-width: 468px;
+    color: #131313;
+    font-size: 3.1rem;
+    font-weight: 700;
+}
+
+.narrow-text {
+    color: #727272;
+    font-weight: 500;
+}
+
+.orange-text {
+    color: #FF900E;
+    font-weight: 700;
+}
+
+.teams-description{
+    color:  #727272;
+font-size: 1rem;
+font-weight: 400;
+padding-bottom: 32px;
+line-height: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ========== Responsive ==========  */
 
 /* ----mobile device---- */
 
-@media screen and (max-width:576px){
-    header{
+@media screen and (max-width:576px) {
+    header {
         padding: 0px;
     }
-    nav{
-        flex-direction:column;
+
+    nav {
+        flex-direction: column;
         padding: 0;
     }
-    .banner-img{
+
+    .banner-img {
         width: 100%;
     }
 }
 
 /* -------medium device---- */
-@media  screen and (min-width:576px) and (max-width:992px) {
-    header{
+@media screen and (min-width:576px) and (max-width:992px) {
+    header {
         padding: 20px;
     }
-    nav{
-        flex-direction:column;
+
+    nav {
+        flex-direction: column;
         padding: 0;
     }
-    .banner-img{
+
+    .banner-img {
         width: 90%;
     }
-    
+
 }
