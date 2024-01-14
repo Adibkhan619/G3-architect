@@ -145,6 +145,13 @@ main {
 
 /* ============ Feature Two============ */
 
+.architect {
+    margin: 0 auto;
+    display: flex;
+    width: 90%;
+
+}
+
 .feature-two {
     display: flex;
     margin-top: 130px;
@@ -159,10 +166,12 @@ main {
 .feature-two-content {
     display: grid;
     grid-template-columns: 1fr;
-    max-width: 586px;
+    /* max-width: 586px; */
     height: 150px;
-    border: 1px solid red;
-    margin-top: 20px;
+    border: 0;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin: 20px 20px 0 0;
     padding: 30px;
     padding-bottom: 0px;
 }
@@ -247,7 +256,7 @@ main {
 .awards {
     margin-top: 100px;
     display: flex;
-    gap: 124px;
+    gap: 7.7rem;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -278,15 +287,53 @@ main {
     margin: 0;
 }
 
-.feature-point img{
+.feature-point img {
     padding: 45px 100px;
     padding-bottom: 10px;
 
 }
 
+/* =========SPONSORS STYLE========== */
 
+.our-sponsors>h1 {
+    color: #131313;
+    font-size: 3.1rem;
+    font-weight: 700;
+}
 
+.our-sponsors {
+    margin-top: 180px;
+    text-align: center;
+}
 
+.sponsors-logo {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    mix-blend-mode: luminosity;
+    gap: 40px;
+    align-items: center;
+    
+
+}
+.sponsors-logo img{
+    width: 165px;
+}
+
+/* ========= FOOTER ========== */
+
+.footer {
+    background: #FFF4E7;
+    margin: 130px auto;
+    text-align: center;
+}
+
+.footer>p {
+    padding: 40px;
+    color: #424242;
+    font-size: 20px;
+    font-weight: 400;
+}
 
 
 
@@ -310,7 +357,7 @@ main {
         width: 100%;
     }
 
-    .feature-one {
+    .feature-one, .sponsors-logo  {
         flex-direction: column;
     }
 
@@ -327,17 +374,27 @@ main {
     p {
         text-align: center;
     }
+
+    .awards {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr;
+        padding: 25px;
+        gap: 25px;
+    }
 }
 
 
 /* -------medium device---- */
 @media screen and (min-width:576px) and (max-width:992px) {
-    header {
+
+    header,
+    .awards {
         padding: 20px;
     }
 
     nav,
-    .feature-one {
+    .feature-one, .sponsors-logo {
         flex-direction: column;
         padding: 0;
     }
@@ -351,6 +408,11 @@ main {
     }
 
     .feature-two {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .awards {
         display: grid;
         grid-template-columns: 1fr;
     }
