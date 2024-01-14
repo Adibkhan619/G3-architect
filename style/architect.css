@@ -145,11 +145,9 @@ main {
 
 /* ============ Feature Two============ */
 
-.architect {
-    margin: 0 auto;
-    display: flex;
-    width: 90%;
-
+.architect-img{
+    height: 90%;
+    margin-left: 90px;
 }
 
 .feature-two {
@@ -164,16 +162,11 @@ main {
 }
 
 .feature-two-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    /* max-width: 586px; */
-    height: 150px;
     border: 0;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
     margin: 20px 20px 0 0;
     padding: 30px;
-    padding-bottom: 0px;
 }
 
 .feature-two-content-one {
@@ -221,7 +214,7 @@ main {
     background: #FF900E;
     position: relative;
     bottom: 123px;
-    right: 92px;
+
     text-align: center;
 
 
@@ -252,7 +245,11 @@ main {
 
 /* ===========SOME FACTS========= */
 
-
+.facts h1{
+    color: #131313;
+    font-size: 3.1rem;
+    font-weight: 700;
+}
 .awards {
     margin-top: 100px;
     display: flex;
@@ -382,6 +379,13 @@ main {
         padding: 25px;
         gap: 25px;
     }
+    .architect-img{
+        width: 90%;
+        margin: 0px;
+    }
+    .rectangle{
+        margin-left: 0px;
+    }
 }
 
 
@@ -392,7 +396,7 @@ main {
     .awards {
         padding: 20px;
     }
-
+    
     nav,
     .feature-one, .sponsors-logo {
         flex-direction: column;
@@ -415,5 +419,13 @@ main {
     .awards {
         display: grid;
         grid-template-columns: 1fr;
+    }
+    .architect-img{
+        width: 90%;
+        margin: 0px;
+        align-items: center;
+    }
+    .rectangle{
+        margin-left: 0px;
     }
 }
